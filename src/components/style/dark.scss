@@ -70,4 +70,21 @@
       }
     }
   }
+
+  .single {
+    .single-container {
+      .top {
+        .details {
+          .itemName {
+            color: rgba(211, 211, 211, 0.781);
+          }
+        }
+      }
+
+      .editButton {
+        color: rgba(211, 211, 211, 0.63);
+        border-color: rgba(211, 211, 211, 0.476);
+      }
+    }
+  }
 }

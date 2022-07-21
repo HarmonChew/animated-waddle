@@ -5,6 +5,11 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Chart from "../../components/chart/Chart";
 import DataTable from "../../components/datatable/DataTable";
 
+// div
+// span
+// h1 - h5
+//img
+
 const Single = () => {
   return (
     <div className="single">
@@ -22,10 +27,10 @@ const Single = () => {
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemName">Jane Doe</h1>
+                <h1 className="itemName">Jane Smith</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email: </span>
-                  <span className="itemValue">janedoe@gmail.com</span>
+                  <span className="itemValue">janesmith@gmail.com</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemKey">Phone: </span>
