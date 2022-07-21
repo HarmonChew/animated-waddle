@@ -1,0 +1,63 @@
+.listtable {
+  padding: 20px;
+
+  .title {
+    width: 100%;
+    font-size: 1.25rem;
+    color: gray;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+    }
+
+    .button {
+      font-size: 1rem;
+      cursor: pointer;
+      color: blue;
+      border-radius: 5px;
+      border: 1px solid blue;
+      padding: 5px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .viewButton {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: darkblue;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 139, 0.36);
+  }
+  .deleteButton {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(247, 84, 84);
+    cursor: pointer;
+    border: 1px solid rgba(247, 84, 84, 0.373);
+  }
+}
