@@ -49,7 +49,7 @@ const Listtable = ({ type, rows, columns }) => {
         rows={data}
         columns={columns.concat(actionColumn)}
         pageSize={10}
-        rowsPerPageOptions={[5]}
+        rowsPerPageOptions={[5, 10]}
         checkboxSelection
       />
     </div>
