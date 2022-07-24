@@ -32,6 +32,40 @@ export const userColumns = [
   },
 ];
 
+export const productColumns = [
+  { field: "id", headerName: "SKU Code", width: 130 },
+  {
+    field: "name",
+    headerName: "Name",
+    width: 250,
+  },
+  {
+    field: "description",
+    headerName: "Description",
+    width: 200,
+  },
+  {
+    field: "category",
+    headerName: "Category",
+    width: 130,
+  },
+  {
+    field: "price",
+    headerName: "Price ($)",
+    type: "number",
+    width: 100,
+    renderCell: (params) => {
+      return <div>{params.row.price.toFixed(2)}</div>;
+    },
+  },
+  {
+    field: "on_hand",
+    headerName: "Quantity on Hand",
+    type: "number",
+    width: 130,
+  },
+];
+
 export const userRows = [
   {
     id: 1,
@@ -9032,5 +9066,276 @@ export const userRows = [
     gender: "Male",
     img: "http://dummyimage.com/102x100.png/ff4444/ffffff",
     age: 33,
+  },
+];
+
+export const productRows = [
+  {
+    id: "70-392-2593",
+    name: "Relish",
+    description:
+      "vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy",
+    category: "Meat",
+    price: 12.9,
+    on_hand: 723,
+  },
+  {
+    id: "40-442-4342",
+    name: "Smirnoff Green Apple Twist",
+    description:
+      "vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel",
+    category: "Vegetables",
+    price: 75.5,
+    on_hand: 129,
+  },
+  {
+    id: "48-297-5905",
+    name: "Glaze - Apricot",
+    description:
+      "condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt",
+    category: "Vegetables",
+    price: 99.1,
+    on_hand: 788,
+  },
+  {
+    id: "44-606-3924",
+    name: "Mushroom - Morel Frozen",
+    description:
+      "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst",
+    category: "Vegetables",
+    price: 50.2,
+    on_hand: 30,
+  },
+  {
+    id: "52-056-6451",
+    name: "Duck - Whole",
+    description:
+      "sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et",
+    category: "Beverage",
+    price: 8.2,
+    on_hand: 255,
+  },
+  {
+    id: "31-429-8199",
+    name: "Pickle - Dill",
+    description:
+      "duis mattis egestas metus aenean fermentum donec ut mauris eget massa",
+    category: "Alcohol",
+    price: 31.4,
+    on_hand: 505,
+  },
+  {
+    id: "88-913-7380",
+    name: "Wine - White, Chardonnay",
+    description:
+      "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat",
+    category: "Alcohol",
+    price: 10.2,
+    on_hand: 250,
+  },
+  {
+    id: "92-462-3224",
+    name: "Chips - Potato Jalapeno",
+    description:
+      "nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio",
+    category: "Vegetables",
+    price: 39.2,
+    on_hand: 262,
+  },
+  {
+    id: "88-402-4729",
+    name: "Puree - Passion Fruit",
+    description:
+      "aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas",
+    category: "Vegetables",
+    price: 6.6,
+    on_hand: 931,
+  },
+  {
+    id: "25-469-8392",
+    name: "Jam - Marmalade, Orange",
+    description:
+      "ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus",
+    category: "Condiments",
+    price: 62.0,
+    on_hand: 794,
+  },
+  {
+    id: "69-898-5832",
+    name: "Table Cloth 81x81 Colour",
+    description:
+      "mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus",
+    category: "Vegetables",
+    price: 91.6,
+    on_hand: 569,
+  },
+  {
+    id: "92-903-8910",
+    name: "Potatoes - Peeled",
+    description:
+      "justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id",
+    category: "Vegetables",
+    price: 24.1,
+    on_hand: 156,
+  },
+  {
+    id: "46-058-6116",
+    name: "Thermometer Digital",
+    description:
+      "felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices",
+    category: "Beverage",
+    price: 37.3,
+    on_hand: 640,
+  },
+  {
+    id: "58-607-9654",
+    name: "Cocoa Powder - Dutched",
+    description:
+      "in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui",
+    category: "Vegetables",
+    price: 53.2,
+    on_hand: 578,
+  },
+  {
+    id: "95-213-9153",
+    name: "Bread - Olive",
+    description:
+      "fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat",
+    category: "Vegetables",
+    price: 86.1,
+    on_hand: 182,
+  },
+  {
+    id: "10-859-8490",
+    name: "Cleaner - Bleach",
+    description:
+      "morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum",
+    category: "Condiments",
+    price: 19.7,
+    on_hand: 176,
+  },
+  {
+    id: "01-603-1074",
+    name: "Petit Baguette",
+    description:
+      "in ante vestibulum ante ipsum primis in faucibus orci luctus et",
+    category: "Alcohol",
+    price: 41.9,
+    on_hand: 587,
+  },
+  {
+    id: "41-969-6266",
+    name: "Garlic",
+    description:
+      "habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut",
+    category: "Alcohol",
+    price: 91.5,
+    on_hand: 798,
+  },
+  {
+    id: "91-543-3653",
+    name: "Bread Fig And Almond",
+    description:
+      "scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
+    category: "Meat",
+    price: 39.6,
+    on_hand: 715,
+  },
+  {
+    id: "91-639-7657",
+    name: "Daves Island Stinger",
+    description:
+      "elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue",
+    category: "Vegetables",
+    price: 65.1,
+    on_hand: 815,
+  },
+  {
+    id: "13-089-2500",
+    name: "Bread - Italian Corn Meal Poly",
+    description:
+      "tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa",
+    category: "Condiments",
+    price: 36.5,
+    on_hand: 188,
+  },
+  {
+    id: "82-919-2811",
+    name: "Cookies - Englishbay Chochip",
+    description:
+      "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis",
+    category: "Beverage",
+    price: 67.8,
+    on_hand: 246,
+  },
+  {
+    id: "74-558-8481",
+    name: "Pasta - Gnocchi, Potato",
+    description: "sapien non mi integer ac neque duis bibendum morbi non quam",
+    category: "Vegetables",
+    price: 72.8,
+    on_hand: 327,
+  },
+  {
+    id: "28-097-3490",
+    name: "Lychee - Canned",
+    description:
+      "fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam",
+    category: "Vegetables",
+    price: 21.3,
+    on_hand: 993,
+  },
+  {
+    id: "99-448-0783",
+    name: "The Pop Shoppe - Cream Soda",
+    description: "ac enim in tempor turpis nec euismod scelerisque quam turpis",
+    category: "Beverage",
+    price: 22.2,
+    on_hand: 827,
+  },
+  {
+    id: "67-718-7916",
+    name: "Oil - Sunflower",
+    description:
+      "eget vulputate ut ultrices vel augue vestibulum ante ipsum primis",
+    category: "Vegetables",
+    price: 13.1,
+    on_hand: 635,
+  },
+  {
+    id: "58-883-5312",
+    name: "Chevril",
+    description:
+      "habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem",
+    category: "Condiments",
+    price: 67.7,
+    on_hand: 588,
+  },
+  {
+    id: "12-392-2205",
+    name: "Juice - V8 Splash",
+    description:
+      "velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque",
+    category: "Beverage",
+    price: 72.1,
+    on_hand: 218,
+  },
+  {
+    id: "21-962-0257",
+    name: "Cherries - Maraschino,jar",
+    description:
+      "egestas metus aenean fermentum donec ut mauris eget massa tempor convallis",
+    category: "Alcohol",
+    price: 99.9,
+    on_hand: 321,
+  },
+  {
+    id: "03-755-3597",
+    name: "Sage - Rubbed",
+    description:
+      "non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis",
+    category: "Meat",
+    price: 72.8,
+    on_hand: 817,
   },
 ];

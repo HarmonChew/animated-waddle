@@ -7,7 +7,7 @@ import DataTable from "../../components/datatable/DataTable";
 import Widget from "../../components/widget/Widget";
 import "./home.scss";
 
-const Home = () => {
+const Home = ({ rows, columns }) => {
   return (
     <div className="home">
       <Sidebar />
@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
-          <DataTable />
+          <DataTable rows={rows} columns={columns} />
         </div>
       </div>
     </div>

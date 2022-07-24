@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./listtable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { Link, useLocation } from "react-router-dom";
-import { userRows, userColumns } from "../../listtabledata";
 
-const Listtable = ({ type }) => {
-  const [data, setData] = useState(userRows);
+const Listtable = ({ type, rows, columns }) => {
+  const [data, setData] = useState(rows);
 
   const handleDelete = (rowId) => {
     setData((prevData) => prevData.filter((item) => item.id !== rowId));
@@ -48,7 +47,7 @@ const Listtable = ({ type }) => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns.concat(actionColumn)}
+        columns={columns.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[5]}
         checkboxSelection

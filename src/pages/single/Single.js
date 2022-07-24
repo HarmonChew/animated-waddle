@@ -10,7 +10,7 @@ import DataTable from "../../components/datatable/DataTable";
 // h1 - h5
 //img
 
-const Single = () => {
+const Single = ({ rows, columns }) => {
   return (
     <div className="single">
       <Sidebar />
@@ -61,7 +61,7 @@ const Single = () => {
         </div>
         <div className="bottom">
           <h1 className="singleTitle">Last Transactions</h1>
-          <DataTable />
+          <DataTable rows={rows} columns={columns} />
         </div>
       </div>
     </div>
